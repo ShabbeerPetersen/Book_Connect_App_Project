@@ -1,7 +1,7 @@
 // imports used for calling information from data.js
 import { BOOKS_PER_PAGE, authors, genres, books } from "./data.js";
 
-//object with HTML elements needed for selection and manipulation
+// Object with HTML elements needed for selection and manipulation
 const selectors = {
   cssSelector: document.documentElement.style,
   oneBook: document.querySelectorAll(".preview"),
@@ -55,7 +55,6 @@ const bookButton = () => {
 };
 
 // This function will open up a preview of the targeted book
-//when selector fires.
 const viewBook = (event) => {
   const { target } = event;
   if (selectors.bookView.open === false) {
@@ -216,6 +215,7 @@ console.log("ShabbeerPetersenWasHere");
 
 // variable booksPerPage used to load first 36 books
 const booksPerPage = [0, BOOKS_PER_PAGE];
+
 // This variable works with the more button to determine
 //how many books remain after loading the first 36
 const PAGE = 1;
